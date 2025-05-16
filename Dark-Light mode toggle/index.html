@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="check">
+        <div class="toggle">
+            <input type="checkbox" id="check">
+            <div class="circle"></div>
+        </div>
+    </label>
+
+    <script>
+        let input=document.querySelector("input");
+        input.addEventListener("change",function(){
+            document.body.style.background=input.checked ? "#222" : "#fff";
+        })
+
+
+    </script>    
+</body>
+</html>
